@@ -20,7 +20,8 @@
 
     <!-- Canvas.js
     -------------------------------->
-    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"> </script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js">
+    </script>
 
 
     <!-- Bootstrap
@@ -53,7 +54,174 @@
 
         <div class="row">
             <div class="col-md-12">
-                
+
+                <!-- Total Number of murders in each state
+                -------------------------------->
+                <div id="chartContainer"></div>
+
+                <script type="text/javascript">
+                    window.onload = function() {
+                        var states = ["A&N Islands", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chandigarh", "Chhattisgarh", "D&N Haveli", "Daman & Diu", "Delhi UT", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jammu & Kashmir", "Jharkhand", "Karnataka", "Kerala", "Lakshadweep", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Puducherry", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal"];
+
+                        var chart = new CanvasJS.Chart("chartContainer", {
+                            title: {
+                                text: "Total Number of Murders in each state",
+                                fontFamily: "Playfair Display",
+                                fontSize: 16,
+                                padding: 10,
+                                verticalAlign: "bottom",
+                                horizontalAlign: "center"
+                            },
+                            data: [{
+                                // Change type to "doughnut", "line", "splineArea", etc.
+                                type: "bar",
+                                dataPoints: [{
+                                        label: "A&N Islands",
+                                        y: 6
+                                    },
+                                    {
+                                        label: "Andhra Pradesh",
+                                        y: 2484
+                                    },
+                                    {
+                                        label: "Arunachal Pradesh",
+                                        y: 69
+                                    },
+                                    {
+                                        label: "Assam",
+                                        y: 1354
+                                    },
+                                    {
+                                        label: "Bihar",
+                                        y: 3441
+                                    },
+                                    {
+                                        label: "Chandigarh",
+                                        y: 22
+                                    },
+                                    {
+                                        label: "Chhattisgarh",
+                                        y: 974
+                                    },
+                                    {
+                                        label: "D&N Haveli",
+                                        y: 3
+                                    },
+                                    {
+                                        label: "Daman & Diu ",
+                                        y: 9
+                                    },
+                                    {
+                                        label: "Delhi UT ",
+                                        y: 530
+                                    },
+                                    {
+                                        label: "Goa",
+                                        y: 37
+                                    },
+                                    {
+                                        label: "Gujarat ",
+                                        y: 1162
+                                    },
+                                    {
+                                        label: "Haryana",
+                                        y: 1008
+                                    },
+                                    {
+                                        label: "Himachal Pradesh ",
+                                        y: 106
+                                    },
+                                    {
+                                        label: "Jammu & Kashmir ",
+                                        y: 184
+                                    },
+                                    {
+                                        label: "Jharkhand ",
+                                        y: 1663
+                                    },
+                                    {
+                                        label: "Karnataka ",
+                                        y: 1684
+                                    },
+                                    {
+                                        label: "Kerala ",
+                                        y: 374
+                                    },
+                                    {
+                                        label: "Lakshadweep ",
+                                        y: 0
+                                    },
+                                    {
+                                        label: "Madhya Pradesh ",
+                                        y: 2158
+                                    },
+                                    {
+                                        label: "Maharashtra ",
+                                        y: 2585
+                                    },
+                                    {
+                                        label: "Manipur ",
+                                        y: 99
+                                    },
+                                    {
+                                        label: "Meghalaya ",
+                                        y: 167
+                                    },
+                                    {
+                                        label: "Mizoram ",
+                                        y: 29
+                                    },
+                                    {
+                                        label: "Nagaland ",
+                                        y: 80
+                                    },
+                                    {
+                                        label: "Odisha ",
+                                        y: 1500
+                                    },
+                                    {
+                                        label: "Puducherry ",
+                                        y: 31
+                                    },
+                                    {
+                                        label: "Punjab ",
+                                        y: 738
+                                    },
+                                    {
+                                        label: "Rajasthan ",
+                                        y: 1573
+                                    },
+                                    {
+                                        label: "Sikkim ",
+                                        y: 15
+                                    },
+                                    {
+                                        label: "Tamil Nadu ",
+                                        y: 2040
+                                    },
+                                    {
+                                        label: "Tripura ",
+                                        y: 142
+                                    },
+                                    {
+                                        label: "Uttar Pradesh ",
+                                        y: 5173
+                                    },
+                                    {
+                                        label: "Uttarakhand ",
+                                        y: 197
+                                    },
+                                    {
+                                        label: "West Bengal ",
+                                        y: 2264
+                                    },
+
+                                ]
+                            }]
+                        });
+                        chart.render();
+                    }
+                </script>
             </div>
         </div>
     </div>
