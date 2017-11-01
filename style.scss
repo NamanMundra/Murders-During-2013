@@ -1,0 +1,38 @@
+$cream: #fff3e0;
+$d-cream: #DDBEA8;
+$black: #160F29;
+$blue: #26408B;
+
+$playfair: 'Playfair Display', serif;
+$mono: 'Source Code Pro', monospace;
+
+body {
+    background-color: $cream;
+    font-family: $mono;
+}
+
+h1 {
+    color: $blue;
+    font-family: $playfair;
+}
+
+.blockquote {
+    border-left: 2px solid $d-cream;
+    padding: 5px 0 5px 15px;
+}
+
+a {
+    color: $blue;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease-out;
+}
+
+a:hover {
+    text-decoration: none;
+    color: $black;
+}
+
+::selection {
+    background-color: $d-cream;
+}
