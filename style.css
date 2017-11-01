@@ -3,24 +3,32 @@ body {
   font-family: "Source Code Pro", monospace; }
 
 h1 {
-  color: #26408B;
+  color: #26408b;
   font-family: "Playfair Display", serif; }
 
+p {
+  text-align: justify; }
+
 .blockquote {
-  border-left: 2px solid #DDBEA8;
-  padding: 5px 0 5px 15px; }
+  border-left: 2px solid #ddbea8;
+  padding: 5px 0 5px 15px;
+  font-style: italic;
+  text-align: justify; }
+  .blockquote .credit {
+    font-size: 0.8em;
+    font-style: normal; }
 
 a {
-  color: #26408B;
+  color: #26408b;
   text-decoration: none;
   font-weight: bold;
-  transition: 0.3s ease-out; }
+  transition: 0.5s ease-out; }
 
 a:hover {
   text-decoration: none;
-  color: #160F29; }
+  color: #160f29; }
 
 ::selection {
-  background-color: #DDBEA8; }
+  background-color: #ddbea8; }
 
 /*# sourceMappingURL=style.css.map */

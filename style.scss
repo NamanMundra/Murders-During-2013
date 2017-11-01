@@ -1,7 +1,7 @@
 $cream: #fff3e0;
-$d-cream: #DDBEA8;
-$black: #160F29;
-$blue: #26408B;
+$d-cream: #ddbea8;
+$black: #160f29;
+$blue: #26408b;
 
 $playfair: 'Playfair Display', serif;
 $mono: 'Source Code Pro', monospace;
@@ -16,16 +16,27 @@ h1 {
     font-family: $playfair;
 }
 
+p {
+    text-align: justify;
+}
+
 .blockquote {
     border-left: 2px solid $d-cream;
     padding: 5px 0 5px 15px;
+    font-style: italic;
+    text-align: justify;
+    
+    .credit {
+        font-size: 0.8em;
+        font-style: normal;
+    }
 }
 
 a {
     color: $blue;
     text-decoration: none;
     font-weight: bold;
-    transition: 0.3s ease-out;
+    transition: 0.5s ease-out;
 }
 
 a:hover {
