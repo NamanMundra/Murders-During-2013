@@ -18,10 +18,9 @@
     -------------------------------->
 
 
-    <!-- Chart.js
+    <!-- Canvas.js
     -------------------------------->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"> </script>
 
 
     <!-- Bootstrap
@@ -42,7 +41,7 @@
                 <h1>Murders during 2013 - Insights</h1>
                 <br>
                 <p>
-                    An interactive visualiztion of <a href="https://data.gov.in/resources/age-group-wise-victims-murder-during-2013">Age-group-wise Victims of murder</a> dataset provided by <a href="https://data.gov.in/"><img src="./Statistics.png">data.gov.in</a>.
+                    An interactive visualiztion of <a href="https://data.gov.in/resources/age-group-wise-victims-murder-during-2013">Age-group-wise Victims of murder</a> dataset provided by <a href="https://data.gov.in/">data.gov.in</a>.
                 </p>
                 <p class="blockquote">
                     The data refers to State/UT-wise details on total number of cases reported under murder and number of victims of murder by gender. The Age group of victims (both male and female) of murders are classified into 0-10, 10-15, 15-18, 18-30, 30-50, 50 and above.
@@ -54,38 +53,7 @@
 
         <div class="row">
             <div class="col-md-12">
-                <canvas id="c"></canvas>
-                <script>
-                    var ctx = document.getElementById('c').getContext('2d');
-
-                    var states = ["A&N Islands", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chandigarh", "Chhattisgarh", "D&N Haveli", "Daman & Diu", "Delhi UT", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jammu & Kashmir", "Jharkhand", "Karnataka", "Kerala", "Lakshadweep", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Puducherry", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal"]
-
-                    var chart = new Chart(ctx, {
-                        // The type of chart we want to create
-                        type: 'pie',
-
-                        // The data for our dataset
-                        data: {
-                            labels: states,
-                            datasets: [{
-                                label: "My First dataset",
-                                backgroundColor: [
-                                    'rgba(255, 99, 132, 1)',
-                                    'rgba(54, 162, 235, 1)',
-                                    'rgba(255, 206, 86, 1)',
-                                    'rgba(75, 192, 192, 1)',
-                                    'rgba(153, 102, 255, 1)',
-                                    'rgba(255, 159, 64, 1)'
-                                ],
-                                borderColor: 'rgba(22, 15, 41, 1)',
-                                data: [0, 10, 5, 2, 20, 30, 45],
-                            }]
-                        },
-
-                        // Configuration options go here
-                        options: {}
-                    });
-                </script>
+                
             </div>
         </div>
     </div>
